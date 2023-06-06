@@ -40,8 +40,8 @@ jobs:
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
         task-definition: task-definition.json
-        container-name: web
-        image: amazon/amazon-ecs-sample:latest
+        container-name: go-app
+        image: 666607936402.dkr.ecr.ap-northeast-1.amazonaws.com/terraform-project:latest
         environment-variables: "LOG_LEVEL=info"
 
     - name: Deploy to Amazon ECS service
