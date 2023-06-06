@@ -4,6 +4,7 @@
     {
       "name": "web",
       "image": "amazon/amazon-ecs-sample:latest",
+      "memory": 128,
       "environment": [
         {
           "name": "LOG_LEVEL",
