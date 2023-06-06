@@ -20,6 +20,7 @@ jobs:
       uses: aws-actions/configure-aws-credentials@v2
       with:
         aws-region: ap-northeast-1
+        role-to-assume: arn:aws:iam::666607936402:role/terraform-project-github-actions
 
     - name: Login to Amazon ECR
       id: login-ecr
@@ -31,5 +32,5 @@ jobs:
         REPOSITORY: terraform-project
         IMAGE_TAG: latest
       run: |
-            docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .
-            docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
+        docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .
+        docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
