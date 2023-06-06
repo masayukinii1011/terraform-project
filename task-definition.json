@@ -1,0 +1,21 @@
+{
+  "family": "my-task-definition",
+  "containerDefinitions": [
+    {
+      "name": "web",
+      "image": "amazon/amazon-ecs-sample:latest",
+      "environment": [
+        {
+          "name": "LOG_LEVEL",
+          "value": "info"
+        }
+      ],
+      "portMappings": [
+        {
+          "containerPort": 80,
+          "protocol": "tcp"
+        }
+      ]
+    }
+  ]
+}
