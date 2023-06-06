@@ -2,8 +2,8 @@
   "family": "my-task-definition",
   "containerDefinitions": [
     {
-      "name": "web",
-      "image": "amazon/amazon-ecs-sample:latest",
+      "name": "go-app",
+      "image": "666607936402.dkr.ecr.ap-northeast-1.amazonaws.com/terraform-project:latest",
       "memory": 128,
       "environment": [
         {
