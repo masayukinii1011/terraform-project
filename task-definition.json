@@ -2,7 +2,7 @@
   "containerDefinitions": [
     {
       "name": "go-app",
-      "image": "666607936402.dkr.ecr.ap-northeast-1.amazonaws.com/terraform-project:latest",
+      "image": "666607936402.dkr.ecr.ap-northeast-1.amazonaws.com/terraform-project:latest"
     }
   ],
   "family": "my-task-definition",
