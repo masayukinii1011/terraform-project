@@ -12,6 +12,14 @@
       ]
     }
   ],
+  "logConfiguration": {
+    "logDriver": "awslogs",
+    "options": {
+      "awslogs-group" : "/ecs/fargate-task-definition",
+      "awslogs-region": "us-east-1",
+      "awslogs-stream-prefix": "ecs"
+    }
+  },
   "family": "my-task-definition",
   "executionRoleArn": "arn:aws:iam::666607936402:role/ElasticContainerServiceTask",
   "networkMode": "awsvpc",
