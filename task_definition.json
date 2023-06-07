@@ -1,0 +1,48 @@
+{
+  "taskDefinitionArn": "arn:aws:ecs:ap-northeast-1:666607936402:task-definition/my-task-definition:5",
+  "containerDefinitions": [
+      {
+          "name": "go-app",
+          "image": "666607936402.dkr.ecr.ap-northeast-1.amazonaws.com/terraform-project:latest",
+          "cpu": 0,
+          "portMappings": [],
+          "essential": true,
+          "environment": [],
+          "mountPoints": [],
+          "volumesFrom": []
+      }
+  ],
+  "family": "my-task-definition",
+  "executionRoleArn": "arn:aws:iam::666607936402:role/ElasticContainerServiceTask",
+  "networkMode": "awsvpc",
+  "revision": 5,
+  "volumes": [],
+  "status": "ACTIVE",
+  "requiresAttributes": [
+      {
+          "name": "com.amazonaws.ecs.capability.ecr-auth"
+      },
+      {
+          "name": "ecs.capability.execution-role-ecr-pull"
+      },
+      {
+          "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+      },
+      {
+          "name": "ecs.capability.task-eni"
+      }
+  ],
+  "placementConstraints": [],
+  "compatibilities": [
+      "EC2",
+      "FARGATE"
+  ],
+  "requiresCompatibilities": [
+      "FARGATE"
+  ],
+  "cpu": "256",
+  "memory": "512",
+  "registeredAt": "2023-06-07T03:12:43.582Z",
+  "registeredBy": "arn:aws:iam::666607936402:root",
+  "tags": []
+}
