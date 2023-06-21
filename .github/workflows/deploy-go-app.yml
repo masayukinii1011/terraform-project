@@ -2,7 +2,7 @@ name: Deploy Go App
 
 on:
   push:
-    paths: go/**
+    paths: [go/**, .github/workflows/deploy-go-app.yml]
     branches: main
 
 # allow use id-token

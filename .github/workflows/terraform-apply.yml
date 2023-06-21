@@ -2,9 +2,8 @@ name: Terraform Apply
 
 on:
   push:
-    paths: terraform/**
+    paths: [terraform/**, .github/workflows/terraform-apply.yml]
     branches: main
-
 
 jobs:
   deploy:
