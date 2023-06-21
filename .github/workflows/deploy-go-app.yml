@@ -1,9 +1,9 @@
-name: Docker Image CI
+name: Deploy Go App
 
 on:
   push:
-    paths: 'go/**'
-    branches: [ main ]
+    paths: go/**
+    branches: main
 
 # allow use id-token
 permissions:
