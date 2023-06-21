@@ -2,6 +2,7 @@ name: Docker Image CI
 
 on:
   push:
+    paths: 'go/**'
     branches: [ main ]
 
 # allow use id-token
