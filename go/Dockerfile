@@ -7,15 +7,6 @@ WORKDIR /app
 # Copy everything from the current directory to the Working Directory inside the container
 COPY . .
 
-# Initialize Go modules
-RUN go mod init go-app
-RUN go mod tidy
+RUN go install github.com/cosmtrek/air@latest
 
-# Build the Go app
-RUN go build -o main .
-
-# This container exposes port 8080 to the outside world
-EXPOSE 8080
-
-# Run the binary program produced by `go build`
-CMD ["./main"]
+CMD ["air", "-c", ".air.toml"]
