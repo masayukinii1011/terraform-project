@@ -7,9 +7,15 @@ type Todo {
   text: String!
   done: Boolean!
   user: User!
+  tags: [Tag!]!
 }
 
 type User {
+  id: ID!
+  name: String!
+}
+
+type Tag {
   id: ID!
   name: String!
 }
